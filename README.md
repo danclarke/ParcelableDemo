@@ -2,6 +2,8 @@
 
 Demo of how to implement IParcelable in Mono for Android (MonoDroid).
 
+A full guide for IParcelable is available at: http://dan.clarke.name/2012/09/implementing-iparcelable-in-mono-for-android/
+
 ##License
 
 Licensed under the BSD license:

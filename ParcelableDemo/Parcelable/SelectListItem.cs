@@ -22,7 +22,7 @@ using Java.Interop;
 
 namespace ParcelableDemo
 {
-	public class SelectListItem : Java.Lang.Object, IParcelable
+	public sealed class SelectListItem : Java.Lang.Object, IParcelable
 	{
 		// Convenience constructors
 		public SelectListItem() {}
@@ -87,7 +87,7 @@ namespace ParcelableDemo
 	/// <summary>
 	/// Generic Parcelable creator that can be used to create objects from parcels
 	/// </summary>
-	public class GenericParcelableCreator<T> : Java.Lang.Object, IParcelableCreator
+	public sealed class GenericParcelableCreator<T> : Java.Lang.Object, IParcelableCreator
 		where T : Java.Lang.Object, new()
 	{
 		private readonly Func<Parcel, T> _createFunc;
